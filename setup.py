@@ -1,4 +1,4 @@
-from distutils.core import setup
+from setuptools import setup
 
 setup(
     name='eyaml',
@@ -10,6 +10,9 @@ setup(
     keywords="yaml env environment",
     url='http://www.bryanmarty.com/',
     packages=['eyaml'],
+    install_requires=[
+        "PyYAML"
+    ],
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Topic :: Utilities",
